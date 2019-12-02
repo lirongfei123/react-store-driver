@@ -1,0 +1,962 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contacts App should add new contacts: 01. Initial state 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should add new contacts: 02. Create Test Contact name 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value="Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should add new contacts: 03. Create Test Contact email 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value="Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value="test.contact@gmail.com"
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should add new contacts: 04. Add Test Contact 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Test Contact
+        </td>
+        <td>
+          test.contact@gmail.com
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should add new contacts: 05. Add Placeholder Contact 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Test Contact
+        </td>
+        <td>
+          test.contact@gmail.com
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should delete contact: 12. Delete Placeholder Contact 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Test Contact
+        </td>
+        <td>
+          test.contact.edited@gmail.com
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should delete contact: 13. Delete Test Contact 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 06. Switch Test Contact to Edit Mode 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-editor"
+      >
+        <td>
+          <input
+            name="name"
+            value="Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            value="test.contact@gmail.com"
+          />
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-save"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-close"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 07. Edit Test Contact name 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-editor"
+      >
+        <td>
+          <input
+            name="name"
+            value="Edited Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            value="test.contact@gmail.com"
+          />
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-save"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-close"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 08. Cancel Test Contact edit 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Test Contact
+        </td>
+        <td>
+          test.contact@gmail.com
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 09. Switch Test Contact to edit Mode 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-editor"
+      >
+        <td>
+          <input
+            name="name"
+            value="Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            value="test.contact@gmail.com"
+          />
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-save"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-close"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 10. Edit Test Contact email 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-editor"
+      >
+        <td>
+          <input
+            name="name"
+            value="Test Contact"
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            value="test.contact.edited@gmail.com"
+          />
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-save"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-close"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Contacts App should edit contact: 11. Save Test Contact edit 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Test Contact
+        </td>
+        <td>
+          test.contact.edited@gmail.com
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-display"
+      >
+        <td>
+          Placeholder
+        </td>
+        <td>
+          Placeholder
+        </td>
+        <td>
+          <button>
+            <i
+              class="zmdi zmdi-edit"
+            />
+          </button>
+          <button>
+            <i
+              class="zmdi zmdi-delete"
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="contact-creator"
+      >
+        <td>
+          <input
+            name="name"
+            placeholder="Contact name..."
+            value=""
+          />
+        </td>
+        <td>
+          <input
+            name="email"
+            placeholder="Contact email..."
+            value=""
+          />
+        </td>
+        <td>
+          <button>
+            Add Contact
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

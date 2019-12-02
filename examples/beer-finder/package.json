@@ -1,0 +1,28 @@
+{
+  "name": "beer-finder",
+  "homepage": "https://solkimicreb.github.io/react-easy-state/examples/beer-finder/build/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "axios": "^0.18.0",
+    "material-ui-search-bar": "^1.0.0-beta.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-easy-state": "^6.1.2",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

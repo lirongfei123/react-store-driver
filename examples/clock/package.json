@@ -1,0 +1,26 @@
+{
+  "name": "clock",
+  "homepage": "https://solkimicreb.github.io/react-easy-state/examples/clock/build/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nx-js/observer-util": "^4.2.2",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-easy-state": "^6.1.2",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

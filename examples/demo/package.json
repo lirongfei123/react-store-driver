@@ -1,0 +1,54 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "co": "^4.6.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ]
+    ],
+    "presets": [
+      "react-app"
+    ]
+  },
+  "scripts": {
+    "start": "mrs start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-syntax-decorators": "^7.2.0",
+    "@babel/preset-react": "^7.7.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "merrily-react-scripts": "^1.0.10"
+  }
+}

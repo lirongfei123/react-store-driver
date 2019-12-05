@@ -1,5 +1,12 @@
+
 declare module 'react-store-driver' {
-  import { ComponentType } from 'react'
-  function createGlobalConnect(obj?: Object): any
-  function createLocalConnect(name: string, comp: any): any
+  type ConnectFunc<T> = {
+    (mapStateToProps: (models: T) => any): any
+  }
+  interface LocalReturn<T> {
+    (mapStateToProps: (models: T) => any): any
+    withModel: ConnectFunc<T>
+  }
+  function createGlobalConnect<T>(obj?: Object): ConnectFunc<T>
+  function createLocalConnect<T>(name: string, comp: any): LocalReturn<T>
 }

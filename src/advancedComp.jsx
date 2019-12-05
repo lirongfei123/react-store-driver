@@ -1,24 +1,16 @@
+
 import React, { Component } from 'react';
 import PropChecks from 'prop-checks';
-
-import { observe, unobserve, observable } from '@nx-js/observer-util';
-export default function (models, options) {
-    options = Object.assign({
-        loadingContent: () => {
-            return null;
-        },
-        typeErrorContent: () => {
-            return null;
-        }
-    });
-    const storeModels = {};
-    for (var key in models) {
-        storeModels[key] = observable(new models[key]);
-        storeModels[key].setup && storeModels[key].setup();
-    }
-    return function (mapStoreToProps) {
+import { observe, unobserve } from '@nx-js/observer-util';
+export default function (options, getBaseComponent) {
+    return function (mapStoreToProps, getInstanceKey) {
+        const BaseComponent = getBaseComponent(mapStoreToProps, getInstanceKey);
         return function (Comp) {
-            return class extends Component {
+            const globalPropName = 'models';
+            return class extends BaseComponent {
+                constructor(props) {
+                    super(props);
+                }
                 state = {
                     loading: false,
                     typeError: false,
@@ -27,10 +19,15 @@ export default function (models, options) {
                 }
                 _before = false
                 _hasInit = false;
-                $locals = {};
-                $globals = storeModels;
                 loadingContent = Comp.loadingContent || options.loadingContent; 
                 typeErrorContent = Comp.typeErrorContent || options.typeErrorContent; 
+                mergeParentModel = () => {
+                    const parentModels = this.props[globalPropName];
+                    return {
+                        ...parentModels,
+                        ...this._MODELS
+                    }
+                }
                 componentDidMount () {
                     this._hasInit = true;
                     (async () => {
@@ -42,7 +39,7 @@ export default function (models, options) {
                                     loading: true,
                                     loadingResult: null
                                 });
-                                const beforeFunction = await Comp.before(storeModels, this.$locals, this.props);
+                                const beforeFunction = await Comp.before(this.mergeParentModel(), this.props);
                                 if (beforeFunction) {
                                     for (var i = 0, len = beforeFunction.length; i< len; i++) {
                                         const loadingResult  = await beforeFunction[i]();
@@ -58,7 +55,7 @@ export default function (models, options) {
                         }
                         this._changeReaction = observe(() => {
                             if (this._before) {
-                                const props = mapStoreToProps(storeModels, this.$locals);
+                                const props = mapStoreToProps(this.mergeParentModel(), this.props);
                                 if (Comp.propChecks) {
                                     const checkResults = PropChecks.checkPropTypes(Comp.propChecks, props, 'prop', Comp.name);
                                     if (checkResults && checkResults.length > 0) {
@@ -97,8 +94,7 @@ export default function (models, options) {
                     const props = {
                         ...this.props,
                         ...this.state.props,
-                        $globals: storeModels,
-                        $locals: this.$locals,
+                        [globalPropName]: this.mergeParentModel(),
                     };
                     return <Comp {...props} />;
                 }

@@ -1,4 +1,4 @@
-import advancedComp from './advancedComp';
+import advancedComp from './advancedComp.jsx';
 import React, { Component } from 'react';
 import { observable } from '@nx-js/observer-util';
 
@@ -9,8 +9,7 @@ export default function (models, options) {
         },
         typeErrorContent: () => {
             return null;
-        },
-        middleComponents: []
+        }
     });
     const storeModels = {};
     for (var key in models) {

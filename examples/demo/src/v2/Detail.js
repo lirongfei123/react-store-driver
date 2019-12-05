@@ -42,7 +42,7 @@ class Detail extends React.Component {
             </p>
             <p>
                 {
-                JSON.stringify(this.props.detail)
+                    JSON.stringify(this.props.detail)
                 }
             </p>
             <DetailChild />

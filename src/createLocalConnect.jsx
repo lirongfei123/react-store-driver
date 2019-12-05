@@ -1,4 +1,4 @@
-import advancedComp from './advancedComp';
+import advancedComp from './advancedComp.jsx';
 import React, { Component } from 'react';
 import { observable } from '@nx-js/observer-util';
 
@@ -10,8 +10,7 @@ export default function (name, modelClass, options) {
         },
         typeErrorContent: () => {
             return null;
-        },
-        middleComponents: []
+        }
     });
     const LocalConnect = advancedComp(options, (mapStateToProps, getInstanceKey) => {
         return class extends Component {
@@ -20,7 +19,7 @@ export default function (name, modelClass, options) {
                 super(props);
                 const _getInstanceKey = getInstanceKey ? getInstanceKey : () => 'default';
                 let instanceKey = _getInstanceKey(props);
-                const instrance = observable(new modelClass(this.props));
+                const instrance = observable(new modelClass(props));
                 modelInstance[instanceKey] = instrance;
                 this._MODELS = {
                     [name]: instrance

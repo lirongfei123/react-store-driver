@@ -7,7 +7,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^32.0.6",
+    "expo": "^46.0.16",
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-easy-state": "^6.1.2",
